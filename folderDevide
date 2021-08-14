@@ -1,8 +1,9 @@
-    var folderDes = "uploadData"
-    var folder, folders = DriveApp.getFoldersByName(folderDes);
+    var folderDes = DriveApp.getFolderById('')
+    var subFolder = form.myLecturer
+    var folder, folders = DriveApp.getFoldersByName(subFolder);
 
     if (folders.hasNext()) {
       folder = folders.next();
     } else {
-      folder = DriveApp.createFolder(folderDes);
+      folder = folderDes.DriveApp.createFolder(subFolder);
     }
