@@ -1,4 +1,4 @@
-    var folderDes = DriveApp.getFolderById('')
+    var folderDes = DriveApp.getFolderById('xxx')
     var subFolder = form.myLecturer
     var folder, folders = DriveApp.getFoldersByName(subFolder);
 
