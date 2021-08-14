@@ -1,0 +1,8 @@
+    var folderDes = "uploadData"
+    var folder, folders = DriveApp.getFoldersByName(folderDes);
+
+    if (folders.hasNext()) {
+      folder = folders.next();
+    } else {
+      folder = DriveApp.createFolder(folderDes);
+    }
